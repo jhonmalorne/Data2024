@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orden y Gestión Urbana · Quintas 2000</title>
+  <meta name="description" content="Orden y Gestión Urbana: sistema para el encargado de condominio. Pagos, tickets de atención en 24 horas, reservas, votaciones y más. Demo: Quintas 2000, Los Guayos, Carabobo.">
+  <meta name="theme-color" content="#0f4c5c">
+  <link rel="icon" href="https://github.com/jhonmalorne/OrdenyGestionUrbana/blob/main/Orden%20y%20gestion%20Urbana.png?raw=true">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar no-print">
+    <div class="topbar-inner">
+      <a class="brand" href="#/inicio" aria-label="Orden y Gestión Urbana, inicio">
+        <img id="logoOGU" alt="Orden y Gestión Urbana" height="48">
+        <span class="brand-text">
+          <strong>Orden y Gestión Urbana</strong>
+          <small>Por una convivencia sana</small>
+        </span>
+      </a>
+      <div class="topbar-tools">
+        <label class="myunit">
+          <span>Mi quinta</span>
+          <select id="myUnit" aria-label="Selecciona tu quinta"></select>
+        </label>
+        <button id="roleBtn" class="btn ghost sm" type="button"></button>
+        <img id="logoConc" class="logo-conc" alt="Concertación Ciudadana" height="40">
+      </div>
+    </div>
+    <nav id="nav" class="tabs" aria-label="Secciones"></nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer no-print">
+    <div class="footer-inner">
+      <div>
+        <strong id="footCondo"></strong>
+        <p id="footAddr"></p>
+        <p>Central de atención: <a id="footPhone" href="#"></a> · <a id="footMail" href="#"></a></p>
+      </div>
+      <div class="social" id="social"></div>
+      <div class="foot-admin" id="footAdmin"></div>
+    </div>
+    <p class="legal">Orden y Gestión Urbana © 2026 · Una solución de Nexus Marketing · Datos de demostración guardados en este navegador.</p>
+  </footer>
+
+  <div id="modalRoot"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
